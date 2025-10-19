@@ -1,0 +1,30 @@
+# ------------------------------------
+# Project Files/Directories to Ignore
+# ------------------------------------
+
+# Dependencies/Build Tooling
+node_modules
+/dist
+/build
+/release
+
+# Package manager files
+package-lock.json
+npm-debug.log*
+yarn-error.log
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Visual Studio Code / IDE Files (if applicable)
+.vscode/
+.idea/
+
+# Images/Assets that might be duplicated or auto-generated during a build
+# If you have a separate 'source' image folder, but a 'build' image folder, ignore the build one.
+# For now, assuming you want to track your assets/img/
+
+# Logs and Temporary files
+*.log
+*.tmp
