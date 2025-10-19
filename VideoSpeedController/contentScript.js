@@ -8,7 +8,7 @@
 const SPEED_INCREMENT = 0.1;
 const MAX_SPEED = 12.0;
 const MIN_SPEED = 0.1;
-const MIN_DECREASE_SPEED = 0.2; // Lowest speed limit when using the 'x' decrease key
+const MIN_DECREASE_SPEED = 0.1; // Lowest speed limit when using the 'x' decrease key
 
 // --- Global State Variables ---
 let videoElement = null;
@@ -351,4 +351,5 @@ setTimeout(() => {
             updateOverlay();
         }
     }
+
 }, 1000);
