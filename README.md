@@ -1,8 +1,8 @@
-# ⚡ Quick Speed Controller
+# ⚡ Video Speed Controller
 
 **Take instant control of your video playback speed on any website using simple, dedicated keyboard shortcuts.**
 
-Quick Speed Controller is a minimalist browser extension built for efficiency. Stop fumbling with video player settings—start using keyboard shortcuts for precise speed adjustments, whether you're racing through a lecture or just casually viewing content.
+Quick Speed Controller is a minimalist browser extension built for efficiency. Stop fumbling with video player settings—start using keyboard shortcuts for precise speed adjustments, whether you're racing through a lecture or just casually viewing content. 
 
 ---
 
