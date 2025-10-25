@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Quick Video Speed Controller",
-    "version": "1.0",
+    "version": "1.0.1",
     "description": "Control video playback speed globally using keyboard shortcuts.",
     "icons": {
         "16": "assets/icons/icon16.png",
@@ -28,4 +28,5 @@
     "background": {
         "service_worker": "background.js"
     }
+
 }
