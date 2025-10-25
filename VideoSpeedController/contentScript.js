@@ -190,8 +190,15 @@ function updateOverlay() {
  * @param {KeyboardEvent} event The keydown event object.
  */
 function handleKeyDown(event) {
-    // Ignore key presses when focus is inside an editable element.
+    // 1. Ignore key presses when focus is inside an editable element.
     if (event.target.tagName === 'INPUT' || event.target.tagName === 'TEXTAREA' || event.target.isContentEditable) {
+        return;
+    }
+    
+    // 2. 🌟 FIX: Check for modifier keys (Ctrl, Alt, Shift, Meta/Command). 
+    // If any are pressed, it's likely a system shortcut (like Ctrl+C), so we return 
+    // immediately to let the browser handle the default action.
+    if (event.ctrlKey || event.altKey || event.shiftKey || event.metaKey) {
         return;
     }
 
@@ -202,6 +209,7 @@ function handleKeyDown(event) {
         case 'x': // Decrease speed
         case 'z': // Toggle speed (between 1.0X and previous speed)
             // Prevent the website or browser from handling these keys (critical for functionality).
+            // This is now safe because we checked for modifiers above.
             event.stopImmediatePropagation();
             event.stopPropagation();
             event.preventDefault();
